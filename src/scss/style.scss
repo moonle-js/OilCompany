@@ -1,0 +1,20 @@
+@import './fonts.scss';
+@import './extend.scss';
+@import './variables.scss';
+@import './mixin.scss';
+@import './header.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: $mainTextColor;
+    text-decoration: none;
+    font-family: "Montserrat";
+
+    body{
+        background: $backgroundColor
+    }
+}

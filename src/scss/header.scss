@@ -1,0 +1,30 @@
+header{
+    @include widhtAndHeight(360px, 90%, 1360px, 60px, 100px, 100px);
+    margin: 20px auto;
+    background: $secondColor;
+    border-radius: 10px;
+    padding: 0px 10px;
+    
+    ul{
+        @extend %flexAround;
+        width: 100%;
+        min-height: 100px;
+        list-style: none;
+
+        .LogoDiv{
+            @include widhtAndHeight(100px, auto, 20%, 100%, 100%, 100%);
+            @extend %flexBetween;
+        }
+
+        .navigator{
+            @extend %flexAround;
+            @include widhtAndHeight(100px, 60%, 60%, 100px, 100%, 100%);
+        }
+
+        .OilLogo{
+            width: 50px !important; 
+            height: 50px !important;
+        }
+    }
+
+}

@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(/src/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(/src/fonts/Roboto/Roboto-Regular.ttf), url(/src/fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Grimson";
+  src: url(/src/fonts/Crimson_Text/CrimsonText-Regular.ttf), url(/src/fonts/Crimson_Text/CrimsonText-Bold.ttf), url(/src/fonts/Crimson_Text/CrimsonText-BoldItalic.ttf), url(/src/fonts/Crimson_Text/CrimsonText-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Nunito";
+  src: url(/src/fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  src: url(/src/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+header ul .LogoDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul .navigator, header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
+  min-width: 360px;
+  width: 90%;
+  max-width: 1360px;
+  min-height: 60px;
+  height: 100px;
+  max-height: 100px;
+  margin: 20px auto;
+  background: #135D66;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+header ul {
+  width: 100%;
+  min-height: 100px;
+  list-style: none;
+}
+header ul .LogoDiv {
+  min-width: 100px;
+  width: auto;
+  max-width: 20%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+header ul .navigator {
+  min-width: 100px;
+  width: 60%;
+  max-width: 60%;
+  min-height: 100px;
+  height: 100%;
+  max-height: 100%;
+}
+header ul .OilLogo {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  color: #E3FEF7;
+  text-decoration: none;
+  font-family: "Montserrat";
+}
+* body {
+  background: #003C43;
+}
+
+/*# sourceMappingURL=style.module.css.map */

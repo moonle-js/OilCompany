@@ -1,0 +1,15 @@
+@mixin widhtAndHeight (
+    $min-width: 200px, 
+    $width: 90%, 
+    $max-width:1200px,
+    $min-height: 100px,
+    $height: 150px,
+    $max-height: 400px){
+
+        min-width: $min-width;
+        width: $width;
+        max-width: $max-width;
+        min-height: $min-height;
+        height: $height;
+        max-height: $max-height;
+}
