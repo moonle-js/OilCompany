@@ -1,5 +1,5 @@
 header{
-    @include widhtAndHeight(360px, 90%, 1360px, 60px, 100px, 100px);
+    @include widhtAndHeight(300px, 90%, 1360px, 60px, 100px, 100px);
     margin: 20px auto;
     background: $secondColor;
     border-radius: 10px;
@@ -19,6 +19,28 @@ header{
         .navigator{
             @extend %flexAround;
             @include widhtAndHeight(100px, 60%, 60%, 100px, 100%, 100%);
+        }
+
+        .hamburgerText{
+            position: relative;
+            @include widhtAndHeight(100px, 60%, 60%, 100px, 100px, 100px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .dropdownMenu{
+            display: flex;
+            border: 2px solid $backgroundColor;
+            flex-direction: column;
+            padding: 10px;
+            align-items: center;
+            justify-content: space-between;
+            position: absolute;
+            top: 30px;
+            @include widhtAndHeight(120px, 60%, 60%, 120px, 120px, 120px);
+            background: $secondColor;
+            border-radius: 15px;
         }
 
         .OilLogo{

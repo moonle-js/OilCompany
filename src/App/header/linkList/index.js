@@ -2,24 +2,28 @@ import Link from "../link"
 import style from '../../../style.module.css'
 import { useState, useEffect } from "react"
 import OilLogo from '../../../images/OilLogo.svg'
+import DropdownList from "./dropdownList"
 
 
 
 export default function LinkList(){
-
+  var name = "mehemmed";
     
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    // useEffect(() => {
-    //   window.addEventListener('resize', function(){
-    //     setWindowWidth(window.innerWidth);
-    //   });
-    // }, []);
 
     window.addEventListener('resize', function(){
         setWindowWidth(window.innerWidth)
     })
     
+
+    // Dropdown menu
+
+    const [dropdownState, setDropdownState] = useState(false);
+
+    function toggleVisible(){
+      setDropdownState(!dropdownState)
+    }
+
     return (
       <>
         <ul>
@@ -28,14 +32,18 @@ export default function LinkList(){
             <Link href="#">AsOil</Link>
           </div>
   
-          {windowWidth > 400 ? (
+          {windowWidth > 450 ? (
             <div className={style.navigator}>
               <Link href="#">Home</Link>
               <Link href="#">Store</Link>
               <Link href="#">Contact Us</Link>
             </div>
           ) : (
-            <span>Hamburger</span>
+            <>
+              <div onClick={toggleVisible} className={style.hamburgerText}>{dropdownState ? <DropdownList/> : "Menu"}</div>
+              
+            </>
+            
           )}
         </ul>
       </>

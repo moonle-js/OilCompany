@@ -31,7 +31,7 @@ header ul .navigator, header ul {
 }
 
 header {
-  min-width: 360px;
+  min-width: 300px;
   width: 90%;
   max-width: 1360px;
   min-height: 60px;
@@ -63,6 +63,36 @@ header ul .navigator {
   height: 100%;
   max-height: 100%;
 }
+header ul .hamburgerText {
+  position: relative;
+  min-width: 100px;
+  width: 60%;
+  max-width: 60%;
+  min-height: 100px;
+  height: 100px;
+  max-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul .dropdownMenu {
+  display: flex;
+  border: 2px solid #003C43;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 30px;
+  min-width: 120px;
+  width: 60%;
+  max-width: 60%;
+  min-height: 120px;
+  height: 120px;
+  max-height: 120px;
+  background: #135D66;
+  border-radius: 15px;
+}
 header ul .OilLogo {
   width: 50px !important;
   height: 50px !important;
@@ -80,6 +110,9 @@ header ul .OilLogo {
 }
 * body {
   background: #003C43;
+}
+* .displayNone {
+  display: none;
 }
 
 /*# sourceMappingURL=style.module.css.map */
