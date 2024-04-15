@@ -7,7 +7,6 @@ import DropdownList from "./dropdownList"
 
 
 export default function LinkList(){
-  var name = "mehemmed";
     
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
