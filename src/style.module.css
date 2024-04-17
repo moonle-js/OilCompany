@@ -30,6 +30,14 @@ header ul .navigator, header ul {
   align-items: center;
 }
 
+main .rightDown, main .rightUp, main .rightMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 20px;
+  align-items: center;
+}
+
 header {
   min-width: 300px;
   width: 90%;
@@ -98,6 +106,30 @@ header ul .OilLogo {
   height: 50px !important;
 }
 
+main {
+  display: flex;
+  min-width: 300px;
+  width: 90%;
+  max-width: 1360px;
+  min-height: 60px;
+  height: 100px;
+  max-height: 100px;
+  min-height: 80vh;
+  height: 80vh;
+  margin: 20px auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 2px solid red;
+}
+main .rightMenu {
+  row-gap: 50px;
+  padding-top: 20px;
+  background: #135D66;
+  width: 25%;
+  border-radius: 15px;
+  min-height: 150px !important;
+  height: 80%;
+}
 * {
   margin: 0;
   padding: 0;

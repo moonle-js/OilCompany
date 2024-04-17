@@ -1,9 +1,10 @@
-import style from "../../style.module.css";
+import style from "../../style.module.css"
+import RightMenu from "./rightMenu";
 
 export default function Main(){
     return(
         <>
-            <h1>Hello world</h1>    
+            <RightMenu></RightMenu>
         </>
     )
 }

@@ -9,6 +9,10 @@ export default function App(){
                 <header  className={style.menim}>
                     <Header></Header>
                 </header>
+                <main>
+                    <Main className={style.rightMenu}></Main>
+                </main>
+
         </>
     )
 }

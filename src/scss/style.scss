@@ -3,6 +3,7 @@
 @import './variables.scss';
 @import './mixin.scss';
 @import './header.scss';
+@import './main.scss';
 
 *{
     margin: 0;
@@ -15,8 +16,10 @@
     font-family: "Montserrat";
 
     body{
-        background: $backgroundColor
+        background: $backgroundColor;
+        
     }
+
 
 
 

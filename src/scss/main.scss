@@ -1,0 +1,29 @@
+main{
+    display: flex;
+    @include widhtAndHeight(300px, 90%, 1360px, 60px, 100px, 100px);
+    min-height: 80vh;
+    height: 80vh;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid red;
+
+    .rightMenu{
+        @extend %flexStartColumn;
+        row-gap: 50px;
+        padding-top: 20px;
+        background: $secondColor;
+        width: 25%;
+        border-radius: 15px;
+        min-height: 150px !important;
+        height: 80%;
+    }
+
+    .rightUp{
+        @extend %flexStartColumn;
+    }
+
+    .rightDown{
+        @extend %flexStartColumn;
+    }
+}
